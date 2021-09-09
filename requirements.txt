@@ -1,0 +1,11 @@
+time
+
+random
+
+sys
+
+beautifulsoup4==4.9.3
+
+keyboard==0.13.5
+
+selenium==3.141.0
