@@ -1,6 +1,6 @@
 # Data-Scraper-V2
 
-Automatic data entry bot for Driggs title company. 
+Data entry bot for Driggs title company. 
 
 ## What it does
 
