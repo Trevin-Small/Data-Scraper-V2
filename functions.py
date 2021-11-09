@@ -10,7 +10,7 @@ def getAgencies(user, titleAgencies, windows, selenBrowser):
     agencyList = []
  
     selenBrowser.get('https://rightdata.driggstitle.com/')
-    wait(3)
+    wait(15)
     selenBrowser.find_element_by_xpath('//a[@class="l-header-menu-projects bgcheck  no-barba login"]').click()
     wait()
     username = selenBrowser.find_element_by_id("name")
