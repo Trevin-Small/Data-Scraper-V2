@@ -77,9 +77,8 @@ def openMta(windows, selenBrowser):
 
 def enterData(agent, titleAgencies, windows, selenBrowser):
     
-    global windowDict
-    startDate = "08/31/2020"
-    endDate = "08/31/2021"
+    startDate = "10/31/2020"
+    endDate = "10/31/2021"
     
     skippedName = enterDataForDate(agent, titleAgencies, windows, selenBrowser, startDate, endDate, True)
     if skippedName:
