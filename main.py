@@ -22,7 +22,7 @@ def main():
         else:
             namesSkipped += 1
 
-        print("Names Completed: " + namesCompleted + ", Names Skipped: " + namesSkipped)
+        print("Names Completed: " + str(namesCompleted) + ", Names Skipped: " + str(namesSkipped))
 
     print("Program Complete. Names Completed: " + str(namesCompleted))
 
