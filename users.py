@@ -6,7 +6,7 @@ class UserCredentials():
         self.username = self.file_lines[0]
         self.password = self.file_lines[1]
         self.mta_username = self.file_lines[2][0:-1]
-        self.mta_password = self.file_lines[3][0:-1]
+        self.mta_password = self.file_lines[3]
         self.pass_file.close()
 
     def get_username(self):
