@@ -52,6 +52,8 @@ def getAgencies(user, titleAgencies, windows, selenBrowser):
 
 def openMta(user, windows, selenBrowser):
 
+    print("User:" + user.get_mta_username() + ", Pass: " + user.get_mta_password())
+
     selenBrowser.execute_script("window.open('about:blank', 'secondtab');")
     selenBrowser.switch_to.window("secondtab")
     windows.updateWindows()
@@ -61,7 +63,7 @@ def openMta(user, windows, selenBrowser):
     selenBrowser.find_element_by_name("user").send_keys(user.get_mta_username())
     wait()
     selenBrowser.find_element_by_name("pw").send_keys(user.get_mta_password())
-    wait()
+    wait(3)
     selenBrowser.find_element_by_name("button").click()
     wait()
     selenBrowser.find_element_by_xpath('//input[@type="submit"]').click()
