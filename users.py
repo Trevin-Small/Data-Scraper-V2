@@ -5,7 +5,7 @@ class UserCredentials():
         self.file_lines = self.pass_file.readlines()
         self.username = self.file_lines[0]
         self.password = self.file_lines[1]
-        self.mta_username = self.file_lines[2][0:-1]
+        self.mta_username = self.file_lines[2]
         self.mta_password = self.file_lines[3]
         self.pass_file.close()
 

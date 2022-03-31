@@ -8,7 +8,7 @@ def main():
     selenBrowser = webdriver.Chrome('./chromedriver')
     windows = browser_windows.BrowserWindows(selenBrowser)
 
-    functions.setDates("01/31/2021", "01/31/2022")
+    functions.setDates("02/28/2021", "02/28/2022")
     functions.getAgencies(user, titleAgencies, windows, selenBrowser)
 
     NUMBER_OF_NAMES = 200
